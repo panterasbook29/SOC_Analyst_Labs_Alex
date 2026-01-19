@@ -153,4 +153,3 @@ Host was immediately isolated. Attempts to beacon to a known C2 domain (beacon.s
 
 ---
 [Back to the Section](/courseFiles/Section_11-documentationAndCaseNotes/documentationAndCaseNotes.md)
-- Monitor for lateral movement from subnet 10.0.5.0/24
