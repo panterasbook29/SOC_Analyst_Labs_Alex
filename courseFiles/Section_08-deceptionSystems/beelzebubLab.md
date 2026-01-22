@@ -10,6 +10,9 @@ Participants will deploy and monitor an AI-powered SSH honeypot (Beelzebub) to d
 ```bash
 sudo su -
 ```
+
+<!---
+
 ```bash
 apt update && apt upgrade -y
 ```
@@ -27,6 +30,8 @@ cd /opt
 ```bash
 git clone https://github.com/mariocandela/beelzebub.git
 ```
+
+--->
 
 ### Get the ChatGPT Api Key
 - Go to [ChatGPT](https://chatgpt.com/) and create an account if you don’t have one
