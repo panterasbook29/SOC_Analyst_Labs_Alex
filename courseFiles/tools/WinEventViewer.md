@@ -1,3 +1,7 @@
+### The file for the lab is under:
+
+`C:\Users\Administrator\Desktop\Labs\Win Event Viewer`
+
 Windows Event Viewer is a built-in administrative tool that allows users to view and analyze logs of system, security, and application events on a Windows machine. It’s essential for troubleshooting, auditing, and monitoring system activity in real time.
 
 You can open it either through the **Start Menu Search**
