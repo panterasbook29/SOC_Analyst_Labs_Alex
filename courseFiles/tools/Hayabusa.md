@@ -7,31 +7,31 @@ Being the first time you have probably heard about this tool, if you search it u
  ```
 
  ```bash
- sudo apt install -y git curl build-essential pkg-config libssl-dev perl
+sudo apt install -y git curl build-essential pkg-config libssl-dev perl
 ```
 
 ```bash
- curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
  ```
 
  ```bash
- source $HOME/.cargo/env
+source $HOME/.cargo/env
 ```
 
 ```bash
- git clone https://github.com/Yamato-Security/hayabusa.git
+git clone https://github.com/Yamato-Security/hayabusa.git
 ```
 
  ```bash
- cd hayabusa
+cd hayabusa
 ```
 
- ```bash
- cargo build --release
- ```
+```bash
+cargo build --release
+```
 
- ```bash
- cd target/release
+```bash
+cd target/release
 ```
 
 ## Using the actual tool
