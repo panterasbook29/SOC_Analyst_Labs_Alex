@@ -84,12 +84,27 @@ Export HTTP and TLS events into a simple CSV for easy review and reporting.
 
 ```bash
 (zeek-cut host < http.log 2>/dev/null || true) | sort -u
+```
+
+```bash
 (zeek-cut server_name < tls.log 2>/dev/null || true) | sort -u
+```
+
+```bash
 zeek-cut ts id.orig_h host method uri status_code < http.log 2>/dev/null | awk -F"	" 'NR>1{print $1","$2","$3",http"}' > http_events.csv
+```
+
+```bash
 if [ -f tls.log ]; then
   zeek-cut ts id.orig_h id.resp_h server_name < tls.log | awk -F"	" 'NR>1{print $1","$2","$3",tls"}' > tls_events.csv
 fi
+```
+
+```bash
 ( echo "ts,client,domain,proto"; cat http_events.csv tls_events.csv 2>/dev/null ) > suspicious_events.csv
+```
+
+```bash
 head -n 20 suspicious_events.csv
 ```
 
@@ -109,7 +124,8 @@ Raise a Notice when HTTP Host or TLS SNI matches a small set of known malicious 
 
 ### Script (save as `mal_domains.zeek`)
 
-```zeek
+```bash
+cat <<'EOF' > mal_domains.zeek
 @load base/protocols/http
 @load base/protocols/ssl
 @load base/frameworks/notice
@@ -155,6 +171,7 @@ event ssl_extension_server_name(c: connection, is_orig: bool, names: string_vec)
         }
     }
 }
+EOF
 ```
 
 
@@ -165,6 +182,9 @@ Run Zeek with the script to generate notice.log entries for matches.
 
 ```bash
 zeek -r ../lab_interlock.pcap mal_domains.zeek
+```
+
+```bash
 cat notice.log
 ```
 
@@ -178,6 +198,9 @@ Count frequent NXDOMAIN responses to find noisy/misconfigured names; page throug
 
 ```bash
 zeek-cut id.orig_h query rcode_name < dns.log | awk '$3=="NXDOMAIN" {print $2}' | sort | uniq -c | sort -rn | head
+```
+
+```bash
 zeek-cut ts id.orig_h host method uri status_code < http.log | awk '$4=="POST"{print $0}' | sort -u | less
 ```
 
