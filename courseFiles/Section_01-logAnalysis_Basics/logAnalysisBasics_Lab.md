@@ -113,8 +113,6 @@ Following up this lead we can get to the same results as earlier, or use it to g
 
 ### Also try finding everything you found in this lab by using [Windows Event Viewer](/courseFiles/tools/WinEventViewer.md)
 
-### The file is under C:\Users\Administrator\Desktop\Labs\Win Event Viewer
-
 ---
 [Back to the Section](/courseFiles/Section_01-logAnalysis_Basics/logAnalysis_basics.md)
 
