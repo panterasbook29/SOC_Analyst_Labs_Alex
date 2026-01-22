@@ -17,7 +17,13 @@ Run Zeek on the pcap to generate Zeek logs in the current directory. The logs (d
 
 ```bash
 mkdir -p zeek-out && cd zeek-out
+```
+
+```bash
 zeek -r ../lab_interlock.pcap
+```
+
+```bash
 ls -1
 ```
 ![](./zeek_lab_photos/zeek_setup.png)
