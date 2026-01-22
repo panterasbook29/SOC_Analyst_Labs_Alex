@@ -7,28 +7,30 @@
 - First things first navigate to hayabusa at `/home/ubuntu/labs/hayabusa_lab/hayabusa/target/release`
 
 ```bash
-cd /home/ubuntu/labs/hayabusa_lab/hayabusa/target/release
+cd /home/ubuntu/SOC_Analyst_Labs/hayabusa/labFile
 ```
 
 - To start off we need to make sure we have the detection rules of hayabusa
 
 ```bash
-./hayabusa update-rules
+hayabusa update-rules
 ```
 
 <img width="527" height="174" alt="image" src="https://github.com/user-attachments/assets/ccf7acb4-342c-45b1-a4b2-ca38b935a450" />
 
-Let's also get the logs that we will be working with and rename them if you don't have it already
+Make sure you are in the right place:
 
 ```bash
-curl -L -o sysmon.evtx https://raw.githubusercontent.com/sbousseaden/EVTX-ATTACK-SAMPLES/master/AutomatedTestingTools/PanacheSysmon_vs_AtomicRedTeam01.evtx
+ls -lh sysmon.evtx
 ```
 
+
+<img width="524" height="20" alt="image" src="https://github.com/user-attachments/assets/409faef8-92c2-4147-b5d2-61602ab27c44" />
 
 - First thing we will do to start disecting the logs is to get some basic **metrics** to understand what system the logs came from, number of events, time range.
 
 ```bash
-./hayabusa log-metrics --file sysmon.evtx
+hayabusa log-metrics --file sysmon.evtx
 ```
 
 <img width="1900" height="507" alt="image" src="https://github.com/user-attachments/assets/eeff5e5b-c62c-44e1-b054-06ed7cd46c97" />
@@ -38,7 +40,7 @@ The logs span about 30 minutes and there are only 565 events, small enough to di
 - Next let's see the Event **ID Distribution** to dentify common or suspicious Sysmon events, we are looking for **1**, **3**, **10**, **11** or even **8**
 
 ```bash
-./hayabusa eid-metrics --file sysmon.evtx
+hayabusa eid-metrics --file sysmon.evtx
 ```
 
 <img width="552" height="501" alt="image" src="https://github.com/user-attachments/assets/a08afb66-20a1-4ba5-a2e7-72b20fe7b597" />
@@ -51,7 +53,7 @@ Important observations:
 - Now let's proceed with a **Full Timeline Analysis**
 
 ```bash
-./hayabusa csv-timeline --file sysmon.evtx -o timeline.csv
+hayabusa csv-timeline --file sysmon.evtx -o timeline.csv
 ``` 
 >[!TIP]
 >
@@ -98,7 +100,7 @@ Following the chain we meet these commands:
 - We can also do some **Hunting Scenarios**, searching for special keywords
 
 ```bash
-./hayabusa search --file sysmon.evtx --regex '(?i)(cmd\.exe|powershell|whoami|mimikatz)'
+hayabusa search --file sysmon.evtx --regex '(?i)(cmd\.exe|powershell|whoami|mimikatz)'
 ```
 
 <img width="1902" height="277" alt="image" src="https://github.com/user-attachments/assets/9161e8c4-4131-45b3-b563-a6d78e84c199" />
