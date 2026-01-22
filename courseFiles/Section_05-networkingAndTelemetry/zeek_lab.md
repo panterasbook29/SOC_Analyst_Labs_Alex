@@ -122,7 +122,9 @@ Raise a Notice when HTTP Host or TLS SNI matches a small set of known malicious 
 - Watch HTTP host headers and TLS SNI fields for matches.
 - Log a Notice when a match is found.
 
-### Script (save as `mal_domains.zeek`)
+### Script
+
+- Run this command to create this script and to save it as `mal_domains.zeek`
 
 ```bash
 cat <<'EOF' > mal_domains.zeek
