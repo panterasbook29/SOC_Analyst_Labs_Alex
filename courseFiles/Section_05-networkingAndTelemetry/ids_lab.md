@@ -56,9 +56,17 @@ mkdir -p ~/labs/ids_lab/{rules,logs,pcaps}
 ## 3. Snort Lab
  
 ### A. Create a Snort Rule
+
+```bash
+cd ~/SOC_Analyst_Labs/ids
+```
+
+```bash
+mkdir rules
+```
  
 ```bash
-nano ~/labs/ids_lab/rules/local.rules
+nano /rules/local.rules
 ```
  
 Paste:
