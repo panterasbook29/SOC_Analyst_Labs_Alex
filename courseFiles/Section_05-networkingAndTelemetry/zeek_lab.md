@@ -16,6 +16,10 @@
 Run Zeek on the pcap to generate Zeek logs in the current directory. The logs (dns.log, http.log, ssl.log) are the data sources for the lab.
 
 ```bash
+cd /home/ubuntu/SOC_Analyst_Labs/zeek
+```
+
+```bash
 mkdir -p zeek-out && cd zeek-out
 ```
 
