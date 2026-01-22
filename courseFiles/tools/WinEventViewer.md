@@ -31,8 +31,8 @@ You can open the **DC1-secLogs-3-26-DomainPasswordSpray** logs to experiment aro
 <br>
 
 Stuff you can with this tool
-- **Search** - Right-click a log → Find → Type keywords (e.g., error, shutdown)
-- **Filter** - Right-click log → Filter Current Log (Filter by Level, Event ID, Source, Time, Keywords, Users, et.)
+- **Search** - Right-click a log -> Find -> Type keywords (e.g., error, shutdown)
+- **Filter** - Right-click log -> Filter Current Log (Filter by Level, Event ID, Source, Time, Keywords, Users, et.)
 - **Custom Time Range** - Filter to events within a specific date/time range
 
 Some useful IDs
@@ -44,8 +44,8 @@ Some useful IDs
 Advanced Features
 - **Custom Views** - Create filters that persist to track specific events over time
 - **Event Subscriptions** - Collect events from remote computers using Event Forwarding (requires setup via Group Policy)
-- **Export Logs** - Right-click a log → Save All Events As (.evtx, .txt, .csv, .xml)
-- **Task Scheduling** - Right-click an event → Attach Task to This Event to trigger actions (email, script, etc)
+- **Export Logs** - Right-click a log -> Save All Events As (.evtx, .txt, .csv, .xml)
+- **Task Scheduling** - Right-click an event -> Attach Task to This Event to trigger actions (email, script, etc)
 
 
 ---
