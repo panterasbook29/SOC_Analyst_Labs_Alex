@@ -1,4 +1,4 @@
-# For the Windows/Kali VM
+# For the Windows/Ubuntu VM
 
 ## The objective for this lab is to
 - Understand how SQL Injection works
