@@ -1,4 +1,4 @@
-# Zeek Lab — Investigating a malicious pcap
+# Zeek Lab - Investigating a malicious pcap
 
 ---
 
@@ -11,7 +11,7 @@
 
 ---
 
-## Setup — what to do and why
+## Setup - what to do and why
 
 Run Zeek on the pcap to generate Zeek logs in the current directory. The logs (dns.log, http.log, ssl.log) are the data sources for the lab.
 
@@ -24,7 +24,7 @@ ls -1
 
 ---
 
-## Task 1 — inspect core logs
+## Task 1 - inspect core logs
 
 Get a quick view of DNS queries, sample HTTP entries, and sample TLS SNI values if present.
 
@@ -38,7 +38,7 @@ ls tls.log ssl.log 2>/dev/null || true
 
 ---
 
-## Task 2 — find suspicious HTTP POSTs
+## Task 2 - find suspicious HTTP POSTs
 
 Extract HTTP requests where the method is POST; these often indicate data exfiltration or C2 beacons.
 
@@ -50,7 +50,7 @@ zeek-cut ts id.orig_h host method uri status_code < http.log | awk '$4=="POST"{p
 
 ---
 
-## Task 3 — inspect TLS SNI for landing pages
+## Task 3 - inspect TLS SNI for landing pages
 
 List unique TLS server\_name (SNI) values to find hostnames used as landing pages or C2 endpoints.
 
@@ -68,7 +68,7 @@ fi
 
 ---
 
-## Task 4 — build a CSV of suspicious events
+## Task 4 - build a CSV of suspicious events
 
 Export HTTP and TLS events into a simple CSV for easy review and reporting.
 
@@ -87,7 +87,7 @@ head -n 20 suspicious_events.csv
 
 ---
 
-## Task 5 — Zeek detection script 
+## Task 5 - Zeek detection script 
 
 Raise a Notice when HTTP Host or TLS SNI matches a small set of known malicious domains.
 
