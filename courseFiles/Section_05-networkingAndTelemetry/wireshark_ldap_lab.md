@@ -11,15 +11,21 @@ Analyze the provided PCAP to investigate LDAP operations between a client and se
 ## Tools & Setup
 
 - **Wireshark** (GUI) or **tcpdump** (CLI)
-- PCAP: `dns.pcap` (located in current directory)  // [Click here to download](./dns.pcap)
+- PCAP: `dns.pcap` (located in `/home/ubuntu/SOC_Analyst_Labs/wireshark`)
 
 ---
 
 ## Lab Instructions
 
+- You can either search for **Wireshark** and click on it, or open it from bash:
+
+```bash
+wireshark
+```
+
 ### 1. Load the PCAP
 
-- **Wireshark**: File → Open → select `dns.pcap`
+- **Wireshark**: File -> Open -> select `dns.pcap`
 
 ![pcap loading](https://i.ibb.co/0jPWPS9X/image.png)
 
