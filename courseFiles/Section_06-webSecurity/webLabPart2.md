@@ -7,11 +7,11 @@ If you didn't do the **1st Part**, go [back](/courseFiles/Section_06-webSecurity
 - ``/logs`` - View the lab's access logs
 - ``/init`` - Reset DB
 
-### Going into Microsoft Edge you can navigate to to http://10.10.119.212:8000/init
+### Going into Microsoft Edge you can navigate to to http://100.116.161.87:8000/init
 - You will get some credentials like these that will be in the DB
 <img width="479" height="80" alt="image" src="https://github.com/user-attachments/assets/de26d4a4-49ee-42e8-a2b8-be5f9645c2a0" />
 
-- Now go over to ``http://10.10.119.212:8000`` ( the vulnerable login )
+- Now go over to ``http://100.116.161.87:8000`` ( the vulnerable login )
 
 - You can enter whatever username and password you want and it will fail since there is no instance of that in the DB
 <img width="444" height="445" alt="image" src="https://github.com/user-attachments/assets/94f196fc-54e3-4815-98c4-5b4e7d21b6bf" />
@@ -19,7 +19,7 @@ If you didn't do the **1st Part**, go [back](/courseFiles/Section_06-webSecurity
 - However... If we use ``' OR '1'='1' --`` as our username and whatever password it will bypass any other checks!
 <img width="417" height="462" alt="image" src="https://github.com/user-attachments/assets/a5042ca5-e8b3-46b3-a6d9-655df8660c98" />
 
-- We can now see the logs at ``http://10.10.119.212:8000/logs``
+- We can now see the logs at ``http://100.116.161.87:8000/logs``
 <img width="1465" height="94" alt="image" src="https://github.com/user-attachments/assets/2703d3b0-704e-4671-b630-9c95b8e3b547" />
 
 - A SOC analyst seeing this will instantly think of SQLi, let's go review the source code that I have you in the [Part 1](/courseFiles/Section_06-webSecurity/webLabPart1.md)
