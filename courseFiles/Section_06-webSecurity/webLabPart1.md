@@ -1,4 +1,4 @@
-# For the Windows/Ubuntu VM
+<img width="1089" height="261" alt="image" src="https://github.com/user-attachments/assets/85d4dbb4-87e3-4982-a2b3-584d1f4ad8bf" /># For the Windows/Ubuntu VM
 
 ## The objective for this lab is to
 - Understand how SQL Injection works
@@ -44,9 +44,12 @@ source venv/bin/activate
 python app.py
 ```
 
-<img width="660" height="288" alt="image" src="https://github.com/user-attachments/assets/5cd1297e-f75d-4124-b7b4-86bb1ca403bf" />
+<img width="1089" height="261" alt="image" src="https://github.com/user-attachments/assets/32164c4d-bf50-4330-941a-c9fb090d2b95" />
 
-To connect to the site open ``http://10.10.119.212:8000`` **NOTE THAT YOUR IP MAY BE DIFFERENT**
+
+You will need to use the **IP** you got from **tailscale status**
+
+To connect to the site open ``http://100.116.161.87:8000`` **NOTE THAT YOUR IP MAY BE DIFFERENT**
 
 ## Go to [Part 2](/courseFiles/Section_06-webSecurity/webLabPart2.md)
 
