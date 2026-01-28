@@ -8,6 +8,9 @@
 
 ## Setup
 
+
+
+
 - Open **Command Prompt**
 
 <img width="85" height="103" alt="image" src="https://github.com/user-attachments/assets/b2c7dbad-d57b-40d0-9318-ca8d40176c22" />
@@ -32,6 +35,11 @@ ssh ubuntu@100.116.161.87
 Password is `metarange`
 
 <img width="247" height="25" alt="image" src="https://github.com/user-attachments/assets/69706053-abe6-4de7-aa48-d9fd739ec4a7" />
+
+
+
+
+
 
 ```bash
 cd ~/SOC_Analyst_Labs/WebLab
