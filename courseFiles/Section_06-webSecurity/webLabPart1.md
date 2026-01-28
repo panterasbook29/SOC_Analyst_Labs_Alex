@@ -38,7 +38,7 @@ cd ~/SOC_Analyst_Labs/WebLab
 ```
 
 ```bash
-source .venv/bin/activate
+source venv/bin/activate
 ```
 ```bash
 python app.py
