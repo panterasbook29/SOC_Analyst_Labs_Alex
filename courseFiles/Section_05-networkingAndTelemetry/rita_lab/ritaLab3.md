@@ -44,7 +44,7 @@ rita view icedid
 
 Continue with [Part 4](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab4.md)
 
-<b><i>Looking for a different lab? </br>[Lab Directory](/IntroClassFiles/navigation.md)</i></b>
+<b><i>Looking for a different lab? </br>[Lab Directory](/coursenavigation.md)</i></b>
 
 ---
 [Back to the section](/courseFiles/Section_05-networkingAndTelemetry/networkingAndTelemetry.md)
