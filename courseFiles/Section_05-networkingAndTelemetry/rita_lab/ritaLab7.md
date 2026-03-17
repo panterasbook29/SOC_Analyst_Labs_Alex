@@ -8,7 +8,8 @@ You can view all of them via
 ```bash
 rita list
 ```
-<img width="657" height="203" alt="image" src="https://github.com/user-attachments/assets/6599e66c-6678-42c5-bec7-bbabd1043bf9" />
+
+<img width="742" height="242" alt="Screenshot From 2026-03-17 10-53-41" src="https://github.com/user-attachments/assets/11c61de5-a251-428c-b6ec-6b94e290eb08" />
 
 ## rdp_ms_dev_tunnels
 
