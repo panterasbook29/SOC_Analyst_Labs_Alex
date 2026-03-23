@@ -30,10 +30,7 @@ Enter a domain of your choosing, and the email and notification method you want 
 ```bash
 ssh ubuntu@linux.cloudlab.lan
 ```
-
-<img width="247" height="25" alt="image" src="https://github.com/user-attachments/assets/69706053-abe6-4de7-aa48-d9fd739ec4a7" />
-
-
+<img width="270" height="22" alt="image" src="https://github.com/user-attachments/assets/87dd5663-83a3-4dd3-ae6e-3e9bb1deb2dc" />
 
 
 Become root:
@@ -45,7 +42,8 @@ Navigate to the honeypot directory:
 ```bash
 cd /opt/owa-honeypot
 ```
-![owa-honeypot directory](425064687-85d0b4c0-b933-459f-8ca6-45ec5687acc6.png)
+<img width="453" height="46" alt="image" src="https://github.com/user-attachments/assets/50ed0c06-534c-41dd-9682-a54e3e54f1d2" />
+
 
 > **Note:** This directory contains the core components of the OWA honeypot.  
 > `owa_pot.py` is the main Flask app that mimics an OWA login page and logs credentials.  
@@ -62,7 +60,9 @@ Change into the `templates` directory:
 ```bash
 cd templates
 ```
-![templates folder](Pasted%20Graphic%203.png)
+<img width="628" height="211" alt="image" src="https://github.com/user-attachments/assets/93200b98-1b31-4980-af3a-2d845edcd1cf" />
+
+
 
 Edit the `outlook_web.html` template using `nano`:
 ```bash
@@ -76,7 +76,8 @@ After the `<head>` tag, add a line with:
 
 Then go back to your CanaryToken page and copy the JavaScript snippet.  
 
-![Copy JS snippet](Pasted%20Graphic%204.png)
+<img width="472" height="360" alt="image" src="https://github.com/user-attachments/assets/8200dd34-ff9d-4a41-a1d5-12e7e2637fce" />
+
 
 >[!IMPORTANT]
 >
@@ -84,11 +85,13 @@ Then go back to your CanaryToken page and copy the JavaScript snippet.
 
 Paste the script into the `nano` editor.  
 
-![Paste JS into nano](Pasted%20Graphic%205.png)
+<img width="896" height="248" alt="image" src="https://github.com/user-attachments/assets/cbd36ff2-0d1c-4886-bedb-54edd10ca3f4" />
+
 
 Then add the closing `</SCRIPT>` tag.  
 
-![Close script tag](Pasted%20Graphic%206.png)
+<img width="896" height="272" alt="image" src="https://github.com/user-attachments/assets/0f914fc2-f504-4c03-b119-831edd4296c7" />
+
 
 Save the file:
 
@@ -100,11 +103,13 @@ Navigate back to the previous directory:
 ```bash
 cd ..
 ```
-![Go back](Pasted%20Graphic%207.png)
+<img width="745" height="45" alt="image" src="https://github.com/user-attachments/assets/2d5af590-8bf3-48c4-88fb-925415eece75" />
+
 
 Start the honeypot server:  
 
-![Start honeypot](Pasted%20Graphic%208.png)
+<img width="897" height="210" alt="image" src="https://github.com/user-attachments/assets/cc2d8971-41fb-4b85-b554-2e10fdfe5556" />
+
 
 ---
 
