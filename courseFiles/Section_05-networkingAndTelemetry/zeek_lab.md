@@ -30,7 +30,8 @@ zeek -r ../lab_interlock.pcap
 ```bash
 ls -1
 ```
-![](./zeek_lab_photos/zeek_setup.png)
+<img width="872" height="454" alt="image" src="https://github.com/user-attachments/assets/9f2e77f6-a63d-4d79-b922-6a8036cdaa11" />
+
 
 ---
 
@@ -73,8 +74,8 @@ else
   echo "No TLS log found"
 fi
 ```
+<img width="916" height="402" alt="image" src="https://github.com/user-attachments/assets/34eed943-c251-4132-9282-b811963ba1e1" />
 
-![](./zeek_lab_photos/task3.png)
 
 ---
 
