@@ -16,7 +16,7 @@ cd /home/ubuntu/SOC_Analyst_Labs/hayabusa/labFile
 hayabusa update-rules
 ```
 
-<img width="730" height="155" alt="image" src="https://github.com/user-attachments/assets/3a343783-aa7d-4bb3-be15-0137650ee167" />
+<img width="619" height="172" alt="image" src="https://github.com/user-attachments/assets/b6f922fb-08fd-4c0c-9785-a17cfa410cfb" />
 
 
 
