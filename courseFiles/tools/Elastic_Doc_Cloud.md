@@ -8,52 +8,65 @@ Elasticsearch is the heart of the Elastic Stack. Combined with Kibana, it powers
 ### Let's go through setting it all up
 1. **Make an account** - [Here](https://cloud.elastic.co/registration?fromURI=%2Fhome) , You can start a free trial for 14 days to experiment and learn this tool, you also don't need a credit card to get started
 
-<img width="882" height="589" alt="image" src="https://github.com/user-attachments/assets/8592f4aa-8211-40d3-945e-08fd93883d6f" />
+<img width="584" height="619" alt="image" src="https://github.com/user-attachments/assets/6029f8b7-b548-4576-bcac-bad7c59bff67" />
+
 <br><br>
 
 2. Insert your name and you can leave a `-` in the Company field
 
-<img width="497" height="417" alt="image" src="https://github.com/user-attachments/assets/fb524685-bdf0-4d1e-9795-b20f46e51cac" />
+<img width="508" height="408" alt="image" src="https://github.com/user-attachments/assets/13e1954b-90c0-4d27-9ec6-186cb2b1b6df" />
+
 <br><br>
 
 3. Select **I am new to Elastic**
 
-<img width="497" height="417" alt="image" src="https://github.com/user-attachments/assets/cab56c51-285e-491a-bb96-363aa51bd295" />
+<img width="508" height="408" alt="image" src="https://github.com/user-attachments/assets/8a7efadb-1de5-49f3-9bc5-f8aae21a367e" />
+
+
 <br><br>
 
 4. Select **Considering Elastic Cloud subscription for production / proof of concept**
 
-<img width="536" height="457" alt="image" src="https://github.com/user-attachments/assets/8779f808-0a4e-4041-96ee-bf103f618fa8" />
+<img width="548" height="514" alt="image" src="https://github.com/user-attachments/assets/c2833e3d-9b33-4d2c-8ffb-d9a46ab2bd7c" />
+
 <br><br>
 
 5. Select **Elastic for Security**
 
-<img width="1614" height="794" alt="image" src="https://github.com/user-attachments/assets/06f7f269-6902-40a5-9879-b28de885f728" />
+<img width="911" height="644" alt="image" src="https://github.com/user-attachments/assets/839d56d3-1cf6-41b2-8429-2a49bc1015fc" />
+
 <br><br>
 
-7. Select **Elastic cloud hosted**
 
-<img width="626" height="794" alt="image" src="https://github.com/user-attachments/assets/5e111ba0-63e2-495f-a8d8-58325e86f352" />
+7. Select **SIEM and Security Analytics**
+
+<img width="514" height="386" alt="image" src="https://github.com/user-attachments/assets/b82366e6-ddc1-4a71-85c8-7622e8bd2978" />
+
 <br><br>
 
-8. Select **SIEM and Security Analytics**
+8. Select **No**
 
-<img width="520" height="510" alt="image" src="https://github.com/user-attachments/assets/3c1b2716-1fa6-41f9-b94d-6e40e8bb7e74" />
+<img width="514" height="386" alt="image" src="https://github.com/user-attachments/assets/c42f6f26-5aac-40ec-b038-e5b9053d4b56" />
+
 <br><br>
 
-9. Select **No**
+9. Select **Elastic cloud hosted**
 
-<img width="525" height="460" alt="image" src="https://github.com/user-attachments/assets/94e47829-ab65-4d6b-98a4-8fbb9a29c666" />
+<img width="467" height="563" alt="image" src="https://github.com/user-attachments/assets/a47110ef-9e37-4ebf-b011-07b2ed0ab061" />
+
 <br><br>
 
 10. Click **Launch** and while it's setting up you can go over to the next steps
 
-<img width="587" height="423" alt="image" src="https://github.com/user-attachments/assets/b8daad41-fe39-4f01-b22b-2c0892aa428e" />
+<img width="487" height="336" alt="image" src="https://github.com/user-attachments/assets/a503b8c8-4680-49d7-9adf-32c0160958b5" />
+
 <br><br>
 
 11. Download Sysmon from [Microsoft Sysinternals](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) and extract it into downloads
 
-<img width="1129" height="635" alt="image" src="https://github.com/user-attachments/assets/5718f61f-1d01-4557-ad0a-1f7904ce2803" />
+<img width="1212" height="685" alt="image" src="https://github.com/user-attachments/assets/cbb68fb5-3fd0-46de-a030-c6085fa33e49" />
+
+
 <br><br>
 
 12. **In powershell run** 
@@ -66,19 +79,23 @@ cd C:\Users\Administrator\Downloads\Sysmon\
 .\Sysmon64.exe -accepteula -i
 ```
 
-13. To set up the Elastic Agent on the machine go to **Management -> Integrations** in the lower left
+13. To set up the Elastic Agent on the machine go to **Data Management -> Integrations** in the lower left
 
-<img width="251" height="236" alt="image" src="https://github.com/user-attachments/assets/5f43c7de-7dbc-4119-b428-07ba5cbea1f0" />
+<img width="363" height="562" alt="image" src="https://github.com/user-attachments/assets/78c5148a-4702-4b68-a44b-41b09b5f0455" />
+
+
 <br><br>
 
 14. Search for **Windows** and select **Windows**
 
-<img width="1673" height="1005" alt="image" src="https://github.com/user-attachments/assets/a8e15d44-1731-472d-a5ca-be4929f045de" />
+<img width="1232" height="756" alt="image" src="https://github.com/user-attachments/assets/43647230-453d-446e-8250-37e5dd52dc69" />
+
 <br><br>
 
 15. Now click on **Add Windows**
 
-<img width="1417" height="817" alt="image" src="https://github.com/user-attachments/assets/6a5c3cae-03e0-4347-998d-8f03555ceed9" />
+<img width="1232" height="756" alt="image" src="https://github.com/user-attachments/assets/c642cea4-1e17-494b-971d-30b084d2d137" />
+
 <br><br>
 
 16. Now press on the **Install Elastic Agent** on the popup in the lower middle part of the screen
