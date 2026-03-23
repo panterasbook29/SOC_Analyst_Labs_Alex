@@ -30,7 +30,8 @@ zeek -r ../lab_interlock.pcap
 ```bash
 ls -1
 ```
-<img width="872" height="454" alt="image" src="https://github.com/user-attachments/assets/9f2e77f6-a63d-4d79-b922-6a8036cdaa11" />
+<img width="900" height="468" alt="image" src="https://github.com/user-attachments/assets/c055837e-1096-49d4-ba39-e036b5d0c864" />
+
 
 
 ---
@@ -86,30 +87,35 @@ Export HTTP and TLS events into a simple CSV for easy review and reporting.
 ```bash
 (zeek-cut host < http.log 2>/dev/null || true) | sort -u
 ```
+<img width="1152" height="254" alt="image" src="https://github.com/user-attachments/assets/d3a1498e-4fcd-492c-935f-9132a007e41f" />
 
 ```bash
-(zeek-cut server_name < tls.log 2>/dev/null || true) | sort -u
+(zeek-cut server_name < ssl.log 2>/dev/null || true) | sort -u
 ```
+<img width="1197" height="1082" alt="image" src="https://github.com/user-attachments/assets/14a25964-589f-4ab7-9880-e5413eb6f4d4" />
 
 ```bash
-zeek-cut ts id.orig_h host method uri status_code < http.log 2>/dev/null | awk -F"	" 'NR>1{print $1","$2","$3",http"}' > http_events.csv
+zeek-cut ts id.orig_h host method uri status_code < http.log 2>/dev/null | awk -F"\t" 'NR>1{print $1","$2","$3",http"}' > http_events.csv
 ```
+<img width="802" height="49" alt="image" src="https://github.com/user-attachments/assets/1f4a962d-42b6-447f-ae4e-423c08bfbf15" />
 
 ```bash
-if [ -f tls.log ]; then
-  zeek-cut ts id.orig_h id.resp_h server_name < tls.log | awk -F"	" 'NR>1{print $1","$2","$3",tls"}' > tls_events.csv
+if [ -f ssl.log ]; then
+  zeek-cut ts id.orig_h id.resp_h server_name <ssl.log | awk -F"\t" 'NR>1{print $1","$2","$3",tls"}' > tls_events.csv
 fi
 ```
+<img width="1832" height="575" alt="image" src="https://github.com/user-attachments/assets/690fe795-3185-4adf-a9b5-d08818d8d732" />
 
 ```bash
 ( echo "ts,client,domain,proto"; cat http_events.csv tls_events.csv 2>/dev/null ) > suspicious_events.csv
 ```
+<img width="901" height="687" alt="image" src="https://github.com/user-attachments/assets/70dbcc0c-ad6a-4903-8fa1-d6e7a6da6490" />
 
 ```bash
 head -n 20 suspicious_events.csv
 ```
+<img width="903" height="491" alt="image" src="https://github.com/user-attachments/assets/5df2fead-1488-4408-9c42-53fa3f1feb44" />
 
-![](./zeek_lab_photos/Task4.png)
 
 ---
 
