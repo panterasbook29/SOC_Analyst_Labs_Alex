@@ -58,7 +58,8 @@ Extract HTTP requests where the method is POST; these often indicate data exfilt
 zeek-cut ts id.orig_h host method uri status_code < http.log | awk '$4=="POST"{print $0}' | sort -u
 ```
 
-![](./zeek_lab_photos/task2.png)
+<img width="1741" height="1063" alt="image" src="https://github.com/user-attachments/assets/c5fe66bd-eba1-42f2-8245-b2cfd98072e0" />
+
 
 ---
 
@@ -196,8 +197,8 @@ zeek -r ../lab_interlock.pcap mal_domains.zeek
 ```bash
 cat notice.log
 ```
+<img width="1839" height="335" alt="image" src="https://github.com/user-attachments/assets/c7cea381-9491-4c19-8afa-d1a74fcf4bd4" />
 
-![](./zeek_lab_photos/cat_noticelog.png)
 
 ---
 
@@ -213,8 +214,10 @@ zeek-cut id.orig_h query rcode_name < dns.log | awk '$3=="NXDOMAIN" {print $2}' 
 zeek-cut ts id.orig_h host method uri status_code < http.log | awk '$4=="POST"{print $0}' | sort -u | less
 ```
 
-![](./zeek_lab_photos/rev_command_1.png)
-![](./zeek_lab_photos/rev_command_2.png)
+<img width="1839" height="91" alt="image" src="https://github.com/user-attachments/assets/e69b8b1e-b644-4871-a939-0c171aa4075b" />
+
+<img width="1839" height="1082" alt="image" src="https://github.com/user-attachments/assets/d41d2ef1-ddeb-4229-91b3-7a013e869248" />
+
 
 ---
 
