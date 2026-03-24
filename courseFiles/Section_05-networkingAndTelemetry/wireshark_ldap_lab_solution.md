@@ -21,7 +21,8 @@ This guide walks you through analyzing LDAP traffic step by step. You’ll use W
 3. Select **dns.pcap** and click **Open**.
 4. Observe the full packet list.
 
-![pcap loading](https://i.ibb.co/0jPWPS9X/image.png)
+<img width="530" height="226" alt="image" src="https://github.com/user-attachments/assets/bb8aeac6-d146-4003-a45c-afb209230f93" />
+
 
 **tcpdump (CLI):**
 
@@ -47,8 +48,7 @@ $ tcpdump -r dns.pcap tcp port 389
 ```
 ldap or tcp.port == 389
 ```
-
-![ldap or tcp.port == 389 filter results](https://i.ibb.co/N6R6FXP0/image.png)
+<img width="1849" height="431" alt="image" src="https://github.com/user-attachments/assets/450b2e57-cc5b-4442-88d3-6dc01779d97e" />
 
 - **ldap**: Decoded LDAP messages.
 - **tcp.port == 389**: Any TCP packet on port 389.
@@ -59,7 +59,8 @@ ldap or tcp.port == 389
 $ tcpdump -r dns.pcap tcp port 389
 ```
 
-![tcpdump filter](https://i.ibb.co/qYtpgMkD/image.png)
+<img width="1843" height="505" alt="image" src="https://github.com/user-attachments/assets/f45569fb-98b6-4b98-bfa6-19530fc1e03a" />
+
 
 ---
 
@@ -74,7 +75,8 @@ $ tcpdump -r dns.pcap tcp port 389
 >
 > _Why it matters:_ Knowing volume helps assess session complexity.
 
-![packets count](https://i.ibb.co/TBWvDWB4/image.png)
+<img width="1854" height="1053" alt="image" src="https://github.com/user-attachments/assets/aec94da1-3d64-44f2-8fb4-a54c3c30fed6" />
+
 
 ---
 
@@ -89,8 +91,8 @@ $ tcpdump -r dns.pcap tcp port 389
   ldap.messageID == 3 && ldap.bindRequest_element
   ```
 - **Result:** Two packets 
+<img width="1156" height="154" alt="image" src="https://github.com/user-attachments/assets/4d722a1e-f43f-469d-a178-233dc2f7c417" />
 
-![bind request](https://i.ibb.co/TBy3wkqK/image.png)
 
 #### 4.2 Extract bindRequest details
 
