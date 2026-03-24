@@ -27,7 +27,9 @@ wireshark
 
 - **Wireshark**: File -> Open -> select `dns.pcap`
 
-![pcap loading](https://i.ibb.co/0jPWPS9X/image.png)
+<img width="530" height="226" alt="image" src="https://github.com/user-attachments/assets/fe5b2d1a-b049-47e5-9770-73f20cb9fd20" />
+
+
 
 - **tcpdump**:
   ```bash
@@ -38,7 +40,8 @@ wireshark
 
 - **Wireshark Display Filter**: `ldap` or `tcp.port == 389`
 
-![ldap filter](https://i.ibb.co/Rp6tDvH5/image.png)
+<img width="743" height="294" alt="image" src="https://github.com/user-attachments/assets/eae0f81f-32b3-481e-85a7-de4fe4df8169" />
+
 
 - **tcpdump Filter**:
   ```bash
@@ -53,7 +56,8 @@ wireshark
 
 - Locate the `bindRequest` (operation ID 3)
 
-![bindRequest package](https://i.ibb.co/RkSFNv56/image.png)
+<img width="1433" height="162" alt="image" src="https://github.com/user-attachments/assets/210b219e-9698-46aa-a484-ac6054d91ea1" />
+
 
 - Identify:
 
