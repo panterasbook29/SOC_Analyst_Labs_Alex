@@ -114,7 +114,8 @@ In **LDAP**, the **Bind DN (Distinguished Name)** identifies the client attempti
 
 In this case, the **Bind DN is absent** because the client used **SASL authentication**, which negotiates credentials differently and often does **not include a DN** in the initial request. This is **expected behavior** for SASL binds.
 
-![bindRequest details](https://i.ibb.co/Gf9B0SJn/image.png)
+<img width="915" height="304" alt="image" src="https://github.com/user-attachments/assets/b53bc5c5-d8e0-4660-b035-3fac72534dae" />
+
 
 #### 4.3 Inspect bindResponse
 
@@ -135,7 +136,9 @@ In this case, the **Bind DN is absent** because the client used **SASL authentic
 > - **Bind DN:** _Not present_ (SASL bind hides DN)
 > - **Authentication:** In progress (saslBindInProgress **14**). Look for a later bindResponse code **0** (success) or **49** (invalidCredentials) to conclude. //Check package no. 159
 
-![Q2](https://i.ibb.co/21h5bpBY/image.png)
+<img width="922" height="340" alt="image" src="https://github.com/user-attachments/assets/49140f4a-12a0-43d0-9f87-34d89346f70c" />
+
+
 ---
 
 ### 5. Analyze LDAP Search Operations
@@ -155,7 +158,8 @@ In this case, the **Bind DN is absent** because the client used **SASL authentic
   ```
 
 
-![search result searchRequest](https://i.ibb.co/DfhDJnrY/image.png)
+<img width="1856" height="198" alt="image" src="https://github.com/user-attachments/assets/76e9aca8-d9ac-4f82-8f82-0faffeaf3d1a" />
+
 
 #### 5.2 searchRequest details(here are the searchRequest details for messageID == 1 only)
 
@@ -166,7 +170,7 @@ In this case, the **Bind DN is absent** because the client used **SASL authentic
 | Scope           | baseObject (0)      | Only the base entry, no children (shallow search)      |
 | Filter          | (objectClass=*)     | Matches all objects under Base DN                      |
 
-![searchRequest details](https://i.ibb.co/B5Xp3ZMt/image.png)
+<img width="534" height="286" alt="image" src="https://github.com/user-attachments/assets/934f8dbf-4ce3-4c60-a9e7-df1680ffa107" />
 
 #### 5.3 Count search results
 
@@ -182,7 +186,8 @@ In this case, the **Bind DN is absent** because the client used **SASL authentic
   - ID 2: 2 entries
 - **Result code (searchResDone):** success (0)
 
-![result code searchResDone](https://i.ibb.co/JYjYdFk/image.png)
+<img width="865" height="401" alt="image" src="https://github.com/user-attachments/assets/ccbd5e19-1561-4fdd-8069-c25a68ed32be" />
+
 
 **Answer to Questions 3 & 4**
 
@@ -209,13 +214,15 @@ In this case, the **Bind DN is absent** because the client used **SASL authentic
   ```
 - **Result:** Two packets (messageID 4).
 
-![unbindRequest filter](https://i.ibb.co/3YRShsxF/image.png)
+<img width="1329" height="101" alt="image" src="https://github.com/user-attachments/assets/2b790ed4-4cdb-44b3-8833-b0f100b40072" />
+
 
 #### 6.2 Verify TCP teardown
 
 1. Right-click → **Follow → TCP Stream**.
 
-![follow tcp stream](https://i.ibb.co/VcM5fjyX/image.png)
+<img width="1302" height="527" alt="image" src="https://github.com/user-attachments/assets/9b9d51e7-c927-45b5-a926-a30f3687f543" />
+
 
 2. After unbindRequest observe:
    - Client → Server: **FIN, ACK**
@@ -237,7 +244,8 @@ In this case, the **Bind DN is absent** because the client used **SASL authentic
 >   3. ACK (client)
 
 
-![Q5 TCP flags](https://i.ibb.co/LdJTsrcb/image.png)
+<img width="1135" height="105" alt="image" src="https://github.com/user-attachments/assets/735b390c-359f-4075-a8c6-5b08fe8fb27c" />
+
 ---
 
 ### 7. Answer Questions
