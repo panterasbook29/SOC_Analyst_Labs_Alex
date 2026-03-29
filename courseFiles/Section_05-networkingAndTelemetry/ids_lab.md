@@ -11,7 +11,7 @@ Learn how to:
  
 ---
  
-## 1. Install IDS Tools on Kali
+## 1. Install IDS Tools 
  
 ### Install Snort (via apt)
 
@@ -26,7 +26,8 @@ snort -V
 >
 > Output should say **Snort++ / Snort 3.x**
  
-![Snort version](./ids_lab_photos/snort_version.png)
+<img width="1007" height="370" alt="image" src="https://github.com/user-attachments/assets/51c35470-9900-4b86-954a-50925d8dca10" />
+
 
 ---
  
@@ -40,8 +41,8 @@ Verify:
 ```bash
 suricata --build-info
 ```
+<img width="789" height="46" alt="image" src="https://github.com/user-attachments/assets/61cb2d8b-5fa3-45a3-a255-7f8aa5d11467" />
 
-![Suricata version](./ids_lab_photos/suricata_version.png)
 
 ---
  
@@ -66,7 +67,7 @@ mkdir rules
 ```
  
 ```bash
-nano /rules/local.rules
+cd rules && nano local.rules
 ```
  
 Paste:
@@ -76,13 +77,15 @@ alert icmp any any -> any any (msg:"[Snort3] ICMP Ping Detected"; sid:1000001; r
 ```
  
 ![Snort rule 1](./ids_lab_photos/nano_snort_rule.png)
-
+```bash
+cd ..
+```
 ---
  
 ###  B. Run Snort 
  
 ```bash
-sudo snort -c /home/ubuntu/labs/ids_lab/snort3-3.8.1.0/lua/snort.lua -R ~/labs/ids_lab/rules/local.rules -i lo -A alert_fast 
+sudo snort -c /usr/local/etc/snort/snort.lua -R /home/ubuntu/SOC_Analyst_Labs/ids/rules/local.rules -i lo -A alert_fast
 ```
  
 - `-c`: config file
@@ -90,7 +93,8 @@ sudo snort -c /home/ubuntu/labs/ids_lab/snort3-3.8.1.0/lua/snort.lua -R ~/labs/i
 - `-i lo`: loopback interface
 - `-A alert_fast`: fast alert output
  
-![Run snort](./ids_lab_photos/Snort_run.png)
+<img width="566" height="748" alt="image" src="https://github.com/user-attachments/assets/c4742c2f-bcbe-446c-8126-327c5881e022" />
+
 
 ---
  
@@ -102,7 +106,8 @@ Open a new terminal:
 ping 127.0.0.1
 ```
  
-![ping](./ids_lab_photos/ping_command.png)
+<img width="633" height="195" alt="image" src="https://github.com/user-attachments/assets/460f5657-49ff-435e-9d20-9fb123dccc22" />
+
 
  You should see something similar to this:
  
@@ -167,7 +172,10 @@ rule-files:
 sudo suricata -c /etc/suricata/suricata.yaml -i lo
 ```
 
-![suricata start](./ids_lab_photos/start_suricata.png)
+<img width="873" height="171" alt="image" src="https://github.com/user-attachments/assets/50ae9b31-bc3a-4eed-8487-9105536c9bc5" />
+
+
+
 
 Then(in another terminal):
  
