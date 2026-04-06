@@ -13,7 +13,7 @@ LimaCharlie is a lightweight browser-based tool. It helps monitor systems, detec
 
 ---
 
-## **Step 1: Access LimaCharlie**
+## **Step 1: Access LimaCharlie and sign up**
 
 Open a browser and go to:
 
@@ -21,29 +21,24 @@ Open a browser and go to:
 https://app.limacharlie.io/
 ```
 
-Click **"Create an account"**.
+Click **"Sign up"**:
 
-![](attachments/register_an_account.PNG)
+<img width="601" height="545" alt="image" src="https://github.com/user-attachments/assets/0bc77d14-d6c2-4251-bb28-b422f8be6791" />
 
----
+Fill out the required field and press **"Continue"**, then press **"Add Password"**: 
 
-## **Step 2: Sign Up**
-
-Choose a sign-up method:
-
-![](attachments/LimaCharlie_signupmethod.png)
-
-Select **"Sign up with email"**:
-
-![](attachments/SIGN_UP_BUTTON.PNG)
+<img width="615" height="723" alt="image" src="https://github.com/user-attachments/assets/a7d95916-deca-48ed-a6b6-5882b96442d4" />
 
 Fill out the required fields and click **"Sign Up"**.
+
+<img width="627" height="794" alt="image" src="https://github.com/user-attachments/assets/03457146-3649-4647-83f6-b626d690a812" />
+
 
 Check your email, click the verification link, then return to your browser and refresh the page.
 
 ---
 
-## **Step 3: Setup Company Information**
+## **Step 2: Setup Company Information**
 
 You will be asked questions about your company. Use fictional information.
 
@@ -54,29 +49,44 @@ Enter the following details:
 - **What use cases are you exploring?** → *Endpoint Detection & Response*
 - **How did you hear about us?** → *Black Hills Info Sec*
 
-![](attachments/company_setup_menu.PNG)
+<img width="850" height="860" alt="image" src="https://github.com/user-attachments/assets/c4cc2950-f437-454c-be1f-d69bd99b462d" />
+
 
 Check the box to agree to the Terms of Service and Privacy Policy.
 
-Click **"Get Started"** then **"Create Organization"**.
+Click **"Got it"** then **"New Organization"**.
 
-![](attachments/create_an_organization.PNG)
+<img width="726" height="355" alt="image" src="https://github.com/user-attachments/assets/61743688-e46a-49bd-97a7-7c5dcd97f008" />
+
+# An Overview of LimaCharlie.
+
+Before you get set up, here's the basics:
+
+* *Sensors* are the primary input for data into LimaCharlie. They run on a variety of supported platforms and send JSON events to LimaCharlie's cloud in real-time. Embedded platforms (e.g. Windows, Mac, Linux) expose deeper capabilities like sending commands and collecting artifacts.
+* *Organizations* are akin to “projects” - they're located in a chosen region and are where configuration and storage is located for a fleet of Sensors and their accompanying infrastructure.
+* *Outputs* allow you to forward your data to storage only you control — like an SFTP server or Amazon S3. Storage within LimaCharlie is optional and allows you to store artifacts (i.e. logs) as well as search, browse, and replay historical Sensor data.
+* *Add-ons* let you enable features within organizations à la carte, allowing you to run each org as lean or as sophisticated as your needs require.
+
+The first step is to create an organization.
+
 
 Fill out your fictional organization’s details.
 
-![](attachments/ficticious_company_selection.PNG)
+<img width="899" height="661" alt="image" src="https://github.com/user-attachments/assets/d1aceb8e-ba05-4681-8a7e-d979f5324a3d" />
+
 
 Click **"Create Organization"**.
 
-Wait for the organization to be created.
+Wait for the organization to be created. To check, go to **"Organizations"**: 
 
-![](attachments/selectorganization.png)
+<img width="1811" height="471" alt="image" src="https://github.com/user-attachments/assets/27667ac6-3a9a-4de8-a6fd-ce40988814f1" />
+
 
 Select your organization to continue.
 
 ---
 
-## **Step 4: Create a Sensor**
+## **Step 3: Create a Sensor**
 
 Under the left-hand menu, go to **Sensors → Installation Keys**.
 
@@ -118,7 +128,7 @@ Copy the command string from **Step 4**.
 
 ---
 
-## **Step 5: Install the Sensor**
+## **Step 4: Install the Sensor**
 
 Go to your desktop, right-click **Windows Terminal**, and select **"Run as administrator"**.
 
