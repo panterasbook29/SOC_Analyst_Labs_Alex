@@ -57,22 +57,39 @@ From the top dropdown menu, select **your device**:
 
 <img width="1436" height="694" alt="image" src="https://github.com/user-attachments/assets/65be4459-a0c6-4476-b474-0676678ca77a" />
 
-Click **"Prepare Host"**, then scroll down to find the **command-and-control** category.  
-<img width="1324" height="460" alt="Screenshot from 2026-04-07 13-45-08" src="https://github.com/user-attachments/assets/b6200abd-4ba9-44d7-8f63-ab70dba4bc99" />
+Click **"Prepare Host"**.
+
+<img width="1356" height="304" alt="image" src="https://github.com/user-attachments/assets/ba3f2dc7-6797-4b49-a632-72cc3698de03" />
+
+In the **"Extensions Tab"** -> **"atomic red-team"** click on the **"Run tests"** section to find the **command-and-control** category.
+
+<img width="1395" height="675" alt="image" src="https://github.com/user-attachments/assets/ecfdd703-1857-4197-9ca8-40eb7906ce4f" />
+
 Check the box next to the category header to select all sub-tests.
 
 
 Click **"Run Tests"**:
 
-![](attachments/C2ALL.PNG)
+<img width="1794" height="900" alt="image" src="https://github.com/user-attachments/assets/f53ec09a-fe01-42c3-b62b-77988c25d811" />
+
 
 ---
 
 ### **Step 4: Analyze the Logs**
 
+Now that our sensor is set up, we need to add the **detection rules** in order to analyze the logs. 
+
 Switch to the **"Detections"** tab on the left:
 
-![](attachments/detections.png)  
+<img width="1839" height="843" alt="image" src="https://github.com/user-attachments/assets/13b3c5ea-a53d-4b9b-95db-578acf5612f1" /> 
+
+In order to select sigma rules, click on **"View extension"** in the **"ext-sigma"** tab: 
+<img width="1841" height="811" alt="image" src="https://github.com/user-attachments/assets/c66cf2a8-fb59-40d9-aaef-37ec72011887" />
+Select
+
+Click **"Subscribe"**.
+<img width="900" height="708" alt="image" src="https://github.com/user-attachments/assets/49b156ef-8773-42c0-a904-610ea3a580f4" />
+
 ![](attachments/logsscreen.png)
 
 You'll see many events. Each time the page refreshes, new attacks may appear.
