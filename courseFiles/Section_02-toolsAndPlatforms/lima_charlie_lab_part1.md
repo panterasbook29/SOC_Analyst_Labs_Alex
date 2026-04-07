@@ -90,41 +90,47 @@ Select your organization to continue.
 
 Under the left-hand menu, go to **Sensors → Installation Keys**.
 
-![](attachments/one.PNG)
+<img width="1821" height="871" alt="image" src="https://github.com/user-attachments/assets/7f60c92f-af44-470e-8b2f-1b3f261861bb" />
 
 Click **"Create Installation Key"**.
 
-![](attachments/two.PNG)
+<img width="1841" height="756" alt="image" src="https://github.com/user-attachments/assets/b9648122-55df-47be-9cbe-b13aac6bb3c8" />
 
-Fill in a description and tags, then click **"Create"**.
 
-![](attachments/three.PNG)
+Fill in a description and tags, then click **"Create"**. For this lab, **"Use Public CA"** is not necessary.
 
+<img width="1146" height="646" alt="image" src="https://github.com/user-attachments/assets/960cc9dc-fc93-4c32-91ff-da1fed912112" />
+
+The new sensor should now be visible in the **"Installation Keys"** section.
 Next, go to **Sensors List**.
 
-![](attachments/four.PNG)
+<img width="1780" height="686" alt="image" src="https://github.com/user-attachments/assets/e73fcd2c-2f7f-4290-8299-0c4bcee6420e" />
+
 
 Click **"Add Sensor"**.
 
-![](attachments/addsensor.png)
+<img width="1830" height="868" alt="image" src="https://github.com/user-attachments/assets/c0cccb96-9d16-49a0-9432-759263e9cc87" />
 
 Scroll down and select the **Windows** sensor.
 
-![](attachments/five.PNG)
+<img width="1435" height="599" alt="image" src="https://github.com/user-attachments/assets/303af1dc-71ca-4d99-ae6b-7ae1a80cff45" />
 
 From the drop-down, select the installation key created earlier and click **"Select"**.
 
-![](attachments/six.PNG)
+<img width="1228" height="319" alt="image" src="https://github.com/user-attachments/assets/b9c31db5-4aa7-49a8-a3da-fb4c80b79686" />
+
 
 Choose the architecture: **"86-64 exe"**.
 
-![](attachments/seven.PNG)
+<img width="1390" height="788" alt="image" src="https://github.com/user-attachments/assets/2917d1ca-ed7c-438b-95fb-157a35c40998" />
+
 
 Click **"Download the selected installer"**.
 
-Copy the command string from **Step 4**.
+Copy the command string from **Step 3**.
 
-![](attachments/eight.PNG)
+<img width="1377" height="678" alt="image" src="https://github.com/user-attachments/assets/f2ce05de-01c7-497f-80db-0a83b77a8a2f" />
+
 
 ---
 
@@ -154,7 +160,8 @@ If successful, your output will look like this:
 
 Return to your browser. You should see a confirmation message:
 
-![](attachments/success.PNG)
+<img width="1042" height="480" alt="image" src="https://github.com/user-attachments/assets/06096160-24a6-420a-9dbf-840c2ac86bb9" />
+
 
 >[!TIP]
 >
