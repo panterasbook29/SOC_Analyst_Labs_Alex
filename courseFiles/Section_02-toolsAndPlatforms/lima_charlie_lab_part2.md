@@ -61,6 +61,76 @@ Click **"Subscribe"**.
 >- Sigma rules serve as the industry standard for vendor-neutral threat detection. Soteria, by contrast, is a high-fidelity managed rule set designed by security experts to offer professional-grade protection, though it typically operates as a paid service.
 >
 >- While these pre-packaged solutions provide excellent "out-of-the-box" coverage, you aren't locked behind a paywall; LimaCharlie’s allows you to create your own custom Detection & Response (D&R) rules manually to target specific suspicious behaviors or local threats at no extra charge.
+---
+**Creating your own detection rules**: 
+
+The rules in LimaCharlie operate on a simple **"If This, Then That"** logic. The detection engine scans real-time telemetry, and when a match is found a predefined action is triggered.
+<br></br>
+To add a rule, go to the **Automation** tab, select **"D&R Rules"** and then click: 
+<img width="1825" height="802" alt="image" src="https://github.com/user-attachments/assets/8178740b-f230-4d2b-a1d5-c0179846a83d" /> 
+
+The Rule section has a **Detect** section and a **Response** section: 
+<img width="1831" height="863" alt="image" src="https://github.com/user-attachments/assets/c94c6864-3bc2-4fbf-8626-3bea9dee8608" />
+
+
+- RULE A : **"Suspicious Csc.exe"** detection: 
+>[!Why This Rule]
+>
+>Attackers abuse the **csc.exe** Windows utility to convert text-based scripts into executable malware directly on the victim's machine **(this is called "Compile After Delivery")**
+
+<br></br> 
+Copy-paste the code into the **Detect** and **Response** fields.
+```yaml
+# Section: DETECTION
+event: NEW_PROCESS
+op: and
+rules:
+  - op: ends with
+    path: event/FILE_PATH
+    value: csc.exe
+  - op: ends with
+    path: event/PARENT/FILE_PATH
+    value: powershell.exe
+
+# Section: RESPONSE
+- action: report
+  name: Custom - Suspicious Csc.exe (Spawned by PowerShell)
+```
+- This rule monitors **"NEW_PROCESS"** type events. If the process is **csc.exe** and the parent process is **powershell.exe** then the alert triggers.
+Give the rule a name and click scroll down to click **"Create"**:
+<img width="1534" height="896" alt="image" src="https://github.com/user-attachments/assets/b69c1115-e028-4d8d-9b42-24580fd99c1a" />
+
+- RULE B : **"Powershell Defender Disable"** detection:
+>[!Why This Rule]
+>
+>Attackers attempt to shut down Windows Defender's real-time monitoring to "blind" the system. That way, using hacking tools and executing ransomware becomes possible without leaving traces.
+<br></br>
+Copy-paste the code into the **Detect** and **Response** fields.
+```yaml
+# Section: DETECTION
+event: NEW_PROCESS
+op: and
+rules:
+  - op: contains
+    path: event/COMMAND_LINE
+    value: Set-MpPreference
+  - op: contains
+    path: event/COMMAND_LINE
+    value: DisableRealtimeMonitoring
+  - op: contains
+    path: event/COMMAND_LINE
+    value: 'true'
+
+# Section: RESPONSE
+- action: report
+  name: Custom - Powershell Defender Disable Attempt
+```
+Give the rule a name and click scroll down to click **"Create"**
+<br></br>
+The new rules should be visible:
+<br></br>
+<img width="647" height="713" alt="image" src="https://github.com/user-attachments/assets/917b7a33-7d9c-4602-b7e3-c118bd87a2f0" />
+
 
 ---
 ### **Step 3: Run Atomic Red Tests**
