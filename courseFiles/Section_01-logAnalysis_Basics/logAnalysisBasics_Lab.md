@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/068fae26-6e8f-402f-ad69-63a4e6a1f59e)
+
 # For the Ubuntu VM
 
 ## The objective of this lab is to use Hayabusa to analyze Sysmon logs and detect suspicious activity related to process creation, network connections, and authentication events.
@@ -129,4 +131,4 @@ Following up this lead we can get to the same results as earlier, or use it to g
 [Back to the Section](/courseFiles/Section_01-logAnalysis_Basics/logAnalysis_basics.md)
 
 
-
+> Created By Turcu Știolică Alexandru - Black Hills Information Security
