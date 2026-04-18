@@ -1,4 +1,4 @@
-[Part 1](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab1.md) [Part 2](./ritaLab2.md) [Part 3](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab3.md) [Part 4](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab4.md) [Part 5](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab5.md) [Part 6](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab6.md) [Part 7](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab7.md)
+[Part 1](./rita_lab/ritaLab1.md) [Part 2](./ritaLab2.md) [Part 3](./rita_lab/ritaLab3.md) [Part 4](./rita_lab/ritaLab4.md) [Part 5](./rita_lab/ritaLab5.md) [Part 6](./rita_lab/ritaLab6.md) [Part 7](./rita_lab/ritaLab7.md)
 
 # Ubuntu VM
 
