@@ -1,4 +1,4 @@
-[Part 1](./rita_lab/ritaLab1.md) [Part 2](./ritaLab2.md) [Part 3](./rita_lab/ritaLab3.md) [Part 4](./rita_lab/ritaLab4.md) [Part 5](./rita_lab/ritaLab5.md) [Part 6](./rita_lab/ritaLab6.md) [Part 7](./rita_lab/ritaLab7.md)
+[Part 1](./ritaLab1.md) [Part 2](./ritaLab2.md) [Part 3](./ritaLab3.md) [Part 4](./ritaLab4.md) [Part 5](./ritaLab5.md) [Part 6](./ritaLab6.md) [Part 7](./ritaLab7.md)
 
 # Ubuntu VM
 
