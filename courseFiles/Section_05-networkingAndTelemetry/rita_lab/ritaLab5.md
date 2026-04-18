@@ -1,4 +1,6 @@
-[Part 1](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab1.md) [Part 2](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab2.md) [Part 3](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab3.md) [Part 4](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab4.md) [Part 5](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab5.md) [Part 6](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab6.md) [Part 7](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab7.md)
+![image](https://github.com/user-attachments/assets/068fae26-6e8f-402f-ad69-63a4e6a1f59e)
+
+[Part 1](./ritaLab1.md) [Part 2](./ritaLab2.md) [Part 3](./ritaLab3.md) [Part 4](./ritaLab4.md) [Part 5](./ritaLab5.md) [Part 6](./ritaLab6.md) [Part 7](./ritaLab7.md)
 
 # For the Network Threat Hunting VM
 
@@ -53,9 +55,11 @@ rita view teamviewer
 <br><br>
 
 
-Continue with [Part 6](/courseFiles/Section_05-networkingAndTelemetry/rita_lab/ritaLab6.md)
+Continue with [Part 6](./ritaLab6.md)
 
 <b><i>Looking for a different lab? </br>[Lab Directory](/coursenavigation.md)</i></b>
 
 ---
 [Back to the section](/courseFiles/Section_05-networkingAndTelemetry/networkingAndTelemetry.md)
+
+> Created By Turcu Știolică Alexandru - Black Hills Information Security
